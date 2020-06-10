@@ -8,9 +8,11 @@
 <h2>Members of Cold Play Band:</h2>
 <br>
 <ul>
-<li>Saikat Karmakar</li>
-<li>Sayan Das</li>
-<li>Avijit Sarkar</li>
+<li>AJ McLean</li>
+<li>Howie Dorough</li>
+<li>Nick Carter</li>
+<li>Kevin Richardson</li>
+<li>Brian Littrell</li>
 </ul>
 </body>
 

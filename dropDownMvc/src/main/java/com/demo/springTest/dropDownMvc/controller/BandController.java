@@ -1,9 +1,8 @@
 package com.demo.springTest.dropDownMvc.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -22,9 +21,16 @@ public class BandController {
 	}
 	
 	@RequestMapping("/bandList")
-	public String bandList(Model theModel,HttpServletRequest req) {
+	public String bandList(@ModelAttribute("band") Bands theBand) {
 		
-		return "Fossils";		
+		if(theBand.getBands().equals("Cold Play")) {
+			return "Coldplay-list";
+		}
+		else {
+			return "BackStreet-Boys";
+			
+		}
+				
 		
 	}
 
